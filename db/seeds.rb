@@ -159,4 +159,8 @@ genres = Hash[[
   "Synthpop"
 ].map { |genre| [genre, Genre.find_or_create_by(name: genre)] }]
 
+  Artist.create(name: "Miles Davis")
+  Song.create(title: "So What", artist_id: 1, genre_id: 9)
+  Note.create(content: "So What by Miles Davis is in the key of A Minor. It should be played at a tempo of 136 BPM. This track was released in 1959.", song_id:1)
 
+  puts 'done'
